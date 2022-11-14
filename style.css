@@ -1,5 +1,8 @@
 
-  
+  .h1{
+    text-align: start;
+    justify-content: flex-start;
+  }
   button {
     border: 0;
     padding: 0;
@@ -13,17 +16,20 @@
   
   @media (width >= 500px) {
     button {
+      text-align: end;
       font-size: 16px;
     }
   }
   
   :is(.navbar, .burger, .dropdowns) {
+     text-align: right ;
     position: fixed;
     top: 0;
     width: 100%;
   }
   
   .navbar {
+  
     z-index: 1;
     left: 0;
     display: flex;
@@ -101,6 +107,7 @@
   
   @media (width < 500px) {
     body.open .dropdowns {
+
       opacity: 1;
       visibility: visible;
       left: 0;
@@ -111,7 +118,7 @@
     .dropdowns {
       position: static;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: flex-end;
       background: transparent;
       opacity: 1;
       visibility: visible;
